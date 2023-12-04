@@ -13,16 +13,17 @@ const contacts = [
 <template>
   <v-container>
     <section>
-      <h2 class="mb-4 text-center text-purple-accent-2">My Contacts</h2>
-      <v-row class="justify-center" no-gutters>
-        <v-col cols="6" class="my-2 text-center" v-for="contact in contacts">
-          <v-btn :href="contact.href" target="_blank" class="text-none" size="large">
+      <h2 class="mb-4 text-center text-purple-accent-3">My Contacts</h2>
+      <v-row justify="center" no-gutters>
+        <v-col cols="7" class="my-2 text-center" v-for="contact in contacts">
+          <v-btn :href="contact.href" target="_blank" class="w-100 text-none" size="large">
             <v-icon class="mr-2" size="33">{{ contact.name }}</v-icon>
             <p>{{ contact.user }}</p>
+           
           </v-btn>
         </v-col>
-        <v-col cols="12" class="mx-auto my-2 text-center">
-          <v-btn class="text-none" size="large">
+        <v-col cols="11" sm="7" class="my-2 text-center">
+          <v-btn class="w-100 text-none" size="large">
             <v-icon class="mr-2" size="33">mdi-gmail</v-icon>
             <p>sarcacetic@gmail.com</p>
           </v-btn>
@@ -32,4 +33,5 @@ const contacts = [
   </v-container>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>

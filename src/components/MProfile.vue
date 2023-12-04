@@ -4,15 +4,19 @@
   <v-container>
     <section>
       <v-row class="justify-center" no-gutters>
-        <span class="my-2 grad-border">
-          <v-avatar size="85" class="main-avatar" image="/myPFP.jpg"></v-avatar>
-        </span>
-        <div class="d-flex flex-column">
-          <h1 class="text-purple-accent-3 text-center mb-1">SarcAceTic / Zhell</h1>
-          <span class="text-center mb-1">
-            A younglin learning the ropes of the world AND front-end engineering!
+        <v-col class="my-2 text-center" cols="12">
+          <span class="grad-border">
+            <v-avatar size="85" class="main-avatar" image="/myPFP.jpg"></v-avatar>
           </span>
-        </div>
+        </v-col>
+        <v-col cols="12">
+          <div class="d-flex flex-column">
+            <h1 class="text-purple-accent-3 text-center mb-1">SarcAceTic / Zhell</h1>
+            <span class="text-center mb-1">
+              A younglin learning the ropes of the world AND front-end engineering!
+            </span>
+          </div>
+        </v-col>
       </v-row>
     </section>
   </v-container>
