@@ -9,11 +9,11 @@ import MyContacts from '../components/MyContacts.vue'
 <template>
   <QuoteBannerVue />
   <MainProfileVue />
-  <v-divider class="mx-4"></v-divider>
+  <v-divider class="mx-6"></v-divider>
   <AboutMe />
-  <v-divider class="mx-4"></v-divider>
+  <v-divider class="mx-6"></v-divider>
   <MySkills /> 
-  <v-divider class="mx-4"></v-divider>
+  <v-divider class="mx-6"></v-divider>
   <MyContacts />
 </template>
 
