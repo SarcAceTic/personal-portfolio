@@ -2,7 +2,7 @@
 
 <template>
   <div class="image-container">
-    <v-img class="banner-image" src="/bannerimage.png" />
+    <v-img class="banner-image w-100 h-auto" src="/bannerimage.png" />
     <p class="w-75 text-center quote-text"><i>"Your time is limited, don't waste it living someone else's life."</i><br>- Steve Jobs</p>
   </div>
 </template>
