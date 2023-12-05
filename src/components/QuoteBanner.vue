@@ -23,5 +23,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-duration: 3s;
+  animation-name: slide-bottom;
+}
+@keyframes slide-bottom {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
 }
 </style>
