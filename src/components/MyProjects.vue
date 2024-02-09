@@ -49,7 +49,7 @@ const projects = [
           <v-card class="h-100" variant="flat">
             <div class="bg-black">
               <div class="h-100 mx-5 d-flex flex-column justify-space-between the-name">
-                <h3 class="mt-5">{{ project.name }}</h3>
+                <h2 class="mt-5">{{ project.name }}</h2>
                 <p class="text-subtitles">{{ project.description }}</p>
                 <div class="mb-3">
                   <v-btn
