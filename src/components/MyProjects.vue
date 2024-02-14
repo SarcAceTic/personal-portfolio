@@ -1,4 +1,7 @@
 <script setup>
+import { useDisplay } from 'vuetify';
+
+const {mdAndDown, lg, xl, xxl, xlAndUp } = useDisplay();
 const projects = [
   {
     name: 'Pricing Project',
@@ -39,18 +42,18 @@ const projects = [
   <v-container fluid>
     <section>
       <h2 class="mb-4 text-center text-purple-accent-3">My Projects</h2>
-      <p class="text-center my-5 mx-sm-5 mx-md-15">
+      <p :class="{'lg-p-size': lg, 'xl-p-size': xl, 'xxl-p-size': xxl}" class="text-center text-size my-5 mx-sm-5 mx-md-15">
         These are all projects that I've made, or have been working on so far! Take a gander...
         <br />
         (Some Projects have no website links, sorry about that!)
       </p>
       <v-row no-gutters>
-        <v-col class="mx-auto my-5" lg="5" v-for="project in projects">
+        <v-col class="mx-auto my-5" cols="12" lg="5" v-for="project in projects">
           <v-card class="h-100" variant="flat">
             <div class="bg-black">
               <div class="h-100 mx-5 d-flex flex-column justify-space-between the-name">
                 <h2 class="mt-5">{{ project.name }}</h2>
-                <p class="text-subtitles">{{ project.description }}</p>
+                <p :class="{'a-p-size': mdAndDown, 'lg-p-size': lg, 'xl-p-size': xl, 'xxl-p-size': xxl}">{{ project.description }}</p>
                 <div class="mb-3">
                   <v-btn
                     :href="project.link"

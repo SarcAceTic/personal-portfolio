@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useDisplay } from 'vuetify';
+
+const {lg, xl, xxl, xlAndUp } = useDisplay();
+</script>
 
 <template>
   <v-container>
@@ -12,7 +16,7 @@
         <v-col cols="12">
           <div class="d-flex flex-column">
             <h1 class="text-purple-accent-3 text-center mb-1">SarcAceTic / Zhell</h1>
-            <span class="text-center mb-1">
+            <span :class="{'lg-p-size': lg, 'xl-p-size': xl, 'xxl-p-size': xxl}" class="text-center mb-1">
               A younglin learning the ropes of the world AND front-end engineering!
             </span>
           </div>

@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+const skills = [
+  ``
+]
+</script>
 
 <template>
   <v-container>
@@ -9,9 +13,9 @@
         frameworks that could take my web applications to the next level! (Pssh... I really like
         minimalistic designs!)
       </p>
-      <v-row justify="center" no-gutters>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+      <v-row class="skill-row" justify="center" no-gutters>
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="d-flex flex-column ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -26,7 +30,8 @@
                   half-increments
                   :model-value="1.5"
                   :item-labels="['Newbie', '', '', '', 'Pro']"
-                  class="align-self-center mx-auto"></v-rating>
+                  class="align-self-center mx-auto">
+                </v-rating>
               </div>
               <div class="mt-4 d-flex flex-column">
                 <h1>JavaScript</h1>
@@ -38,8 +43,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="d-flex flex-column ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -65,8 +70,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="d-flex flex-column ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -91,8 +96,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -124,8 +129,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -153,8 +158,8 @@
             </v-card-text>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="8" md="5" class="mx-4 my-4">
-          <v-card class="h-100" variant="flat">
+        <v-col cols="12" sm="8" md="5" class="mx-4 my-4 h-100">
+          <v-card class="somesome" variant="flat">
             <v-card-text class="ma-1">
               <div class="d-flex">
                 <svg class="skill-icon" viewBox="0 0 128 128">
@@ -194,5 +199,7 @@
 .skill-icon {
   width: 60px;
   height: 60px;
+}
+.skill-row {
 }
 </style>
